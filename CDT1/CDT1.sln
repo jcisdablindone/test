@@ -3,25 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CDT New Website", "http://localhost:2376", "{4A11780B-C132-453A-AE85-04FCE9E9283A}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CDT1", "http://localhost:14435", "{CC23636A-00BE-44EF-BB6C-0820105DD276}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_2376"
-		Debug.AspNetCompiler.PhysicalPath = "..\CDT New Website\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2376\"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_14435"
+		Debug.AspNetCompiler.PhysicalPath = "..\CDT1\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_14435\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_2376"
-		Release.AspNetCompiler.PhysicalPath = "..\CDT New Website\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2376\"
+		Release.AspNetCompiler.VirtualPath = "/localhost_14435"
+		Release.AspNetCompiler.PhysicalPath = "..\CDT1\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_14435\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "..\CDT New Website\"
+		SlnRelativePath = "..\CDT1\"
+		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
 Global
@@ -29,8 +30,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4A11780B-C132-453A-AE85-04FCE9E9283A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4A11780B-C132-453A-AE85-04FCE9E9283A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC23636A-00BE-44EF-BB6C-0820105DD276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC23636A-00BE-44EF-BB6C-0820105DD276}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
