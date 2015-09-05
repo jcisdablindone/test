@@ -1,0 +1,10 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = null;
+}
+
+@{
+    var homeUrl = Model.Content.DescendantsOrSelf("Home").First().Url;
+
+    Response.Redirect(homeUrl);
+}

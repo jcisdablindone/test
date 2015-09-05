@@ -1,0 +1,27 @@
+﻿
+<div id="header-wrapper">
+    <div id="header" class="container">
+        <div id="logo">
+            <h1><a href="#">CDT Roofing</a></h1>
+        </div>
+        <div id="menu">
+            <ul>
+                @{int accesskey = 1;}
+                @foreach (var child in Model.Content.Parent.Children)
+                {
+                    if (child.Name == Model.Content.Name) 
+                    { 
+                        <li class="current_page_item"><a href="@child.Url" accesskey="@accesskey" title="@child.Name">@child.Name</a></li>  
+                    }
+                    else
+                    {
+                        <li><a href="@child.Url" accesskey="@accesskey" title="@child.Name">@child.Name</a></li>
+                    }
+
+                    accesskey++;
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+

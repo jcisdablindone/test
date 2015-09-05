@@ -1,0 +1,56 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Layout_Master.cshtml";
+}
+
+@Html.Partial("Navigation")
+
+@{
+   
+    
+    var root = Model.Content.Ancestor(1);
+}
+
+<div id="banner">
+    <div class="container">
+        <div class="title">
+            <h2>@Model.Content.GetPropertyValue("bannerheading")</h2>
+            <span class="byline">@Model.Content.GetPropertyValue("bannerText")</span>
+        </div>
+        <ul class="actions">
+            <li><a href="quotes.html" class="button">@Model.Content.GetPropertyValue("buttonText")</a></li>
+        </ul>
+    </div>
+</div>
+<div id="extra" class="container">
+    <!--<div class="title">
+        <h2>Praesent scelerisquet</h2>
+        <span class="byline">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue</span> </div>-->
+    <div id="three-column">
+        <div class="boxA">
+            <div class="box">
+                <a href="@root.DescendantsOrSelf("About").First().Url">
+                    <span class="fa fa-wrench"></span>
+                    <p>@Model.Content.GetPropertyValue("box1")</p>
+                </a>
+            </div>
+        </div>
+        <div class="boxB">
+            <div class="box">
+                <a href="@root.DescendantsOrSelf("Quote").First().Url">
+                    <span class="fa fa-pencil"></span>
+                    <p>@Model.Content.GetPropertyValue("box2")</p>
+                </a>
+            </div>
+        </div>
+        <div class="boxC">
+            <div class="box">
+                <a href="@root.DescendantsOrSelf("OurClients").First().Url">
+                    <span class="fa fa-group"></span>
+                    <p>@Model.Content.GetPropertyValue("box3")</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    
